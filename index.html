@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Meuble</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+    <nav class="navbar">
+        <h2>🪑 Meubles Richo Jaya</h2>
+
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About us</a>
+            <a href="#best-sellers">Shop</a>
+            <a href="#collection">Category</a>
+            <button>Buy Now</button>
+        </div>
+    </nav>
+
+        <div class="hero-content">
+            <h1>Meubles</h1>
+
+            <h3>
+                Beautify space<br>
+                Change the atmosphere
+            </h3>
+
+            <p>
+                Lorem ipsum dolor sit amet,consectetur adipiscing <br>
+                elit vevamus venenatis dolor vel lacus laoreet is.
+                
+            </p>
+
+            <div class="hero-buttons">
+    <button type="button" onclick="document.getElementById('best-sellers').scrollIntoView({behavior:'smooth'})">
+        Explore Now
+    </button>
+
+    <button class="learn" type="button" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+        Learn More
+    </button>
+</div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <main class="body">
+
+        <!-- 1. BEST SELLERS SECTION -->
+        <div class="body-content" id="best-sellers">
+            <div class="section-header">
+                <div>
+                    <h2>
+                        Discover Our Hottest <br>
+                        Furniture Best Sellers
+                    </h2>
+                    <p class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                        Vivamus venenatis dolor vel lacus laoreet tristique.
+                    </p>
+                </div>
+
+                <div class="slider-nav">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- Furniture Cards -->
+            <div class="furniture-container">
+                <div class="furniture-card">
+                    <div class="furniture-image">
+                        <img src="satu.png" alt="Modern Chair">
+                    </div>
+                    <div class="furniture-info">
+                        <div>
+                            <h3>Modern Chair</h3>
+                            <p>$499</p>
+                        </div>
+                        <button class="cart-button">🛒</button>
+                    </div>
+                </div>
+
+                <div class="furniture-card">
+                    <div class="furniture-image">
+                        <img src="dua.png" alt="Wood Chair">
+                    </div>
+                    <div class="furniture-info">
+                        <div>
+                            <h3>Wood Chair</h3>
+                            <p>$599</p>
+                        </div>
+                        <button class="cart-button">🛒</button>
+                    </div>
+                </div>
+
+                <div class="furniture-card">
+                    <div class="furniture-image">
+                        <img src="tiga.png" alt="Table Wood">
+                    </div>
+                    <div class="furniture-info">
+                        <div>
+                            <h3>Table Wood</h3>
+                            <p>$399</p>
+                        </div>
+                        <button class="cart-button">🛒</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. ABOUT FURNITURE SECTION -->
+        <section class="about-furniture" id="about">
+            <div class="about-text">
+                <h2>
+                    Creating <br> Furniture with <br>
+                    Passion and <br> Precision
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet,consectetur adipisicing elit. <br>
+                    Vivamus venenatis dolor vel lacus laoreet tristique.
+                    
+                </p>
+
+                <!-- Statistik -->
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>18k+</h3>
+                        <p>Product</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>15k+</h3>
+                        <p>Happy</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>20k+</h3>
+                        <p>Project</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>20+</h3>
+                        <p>Category</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-image">
+                <img src="Rectangle 20.png" alt="Furniture Chair">
+                <button>Read More</button>
+            </div>
+        </section>
+
+        <!-- 3. COLLECTION SECTION (LANJUTAN) -->
+        <section class="collection-section" id="collection">
+            <div class="section-header">
+                <div>
+                    <h2>
+                        Discover the Artistry of <br>
+                        Our Furniture Collection
+                    </h2>
+                    <p class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                        Vivamus venenatis dolor vel lacus laoreet tristique.
+                    </p>
+                </div>
+
+                <div class="slider-nav">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="collection-grid">
+                <div class="collection-card">
+                    <img src="Rectangle 12.png" alt="Wood Cupboard">
+                    <div class="collection-label">Wood Cupboard</div>
+                </div>
+                <div class="collection-card">
+                    <img src="Rectangle 13.png" alt="Wood Chair">
+                    <div class="collection-label">Wood Chair</div>
+                </div>
+                <div class="collection-card">
+                    <img src="Rectangle 14.png" alt="Wood Sofa">
+                    <div class="collection-label">Wood Sofa</div>
+                </div>
+                <div class="collection-card">
+                    <img src="Rectangle 15.png" alt="Lamp">
+                    <div class="collection-label">Lamp</div>
+                </div>
+            </div>
+
+            <div class="center-btn">
+                <button>Explore Now</button>
+            </div>
+        </section>
+
+        <!-- 4. TESTIMONIALS SECTION (LANJUTAN) -->
+        <section class="testimonial-section">
+            <div class="section-header">
+                <div>
+                    <h2>
+                        Hear What Our Customers <br>
+                        Have to Say
+                    </h2>
+                    <p class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                        Vivamus venenatis dolor vel lacus laoreet tristique.
+                    </p>
+                </div>
+
+                <div class="slider-nav">
+                    <button class="prev">&#10094;</button>
+                    <button class="next">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="testimonial-container">
+                <!-- Card Tengah (Utama) -->
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="IMG_5434.JPG" alt="Richo Ardiansyah" class="avatar">
+                        <div class="testi-info">
+                            <h4>Richo Ardiansyah</h4>
+                            <span>Owner</span>
+                            <div class="stars">★★★★★</div>
+                            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. <br> Vivamus venenatis dolor vel lacus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Tengah (Utama) -->
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-card">
+                        <img src="Rectangle 9.png" alt="Jose Kovacek" class="avatar">
+                        <div class="testi-info">
+                            <h4>Jose Kovacek</h4>
+                            <span>Chief Identity Specialist</span>
+                            <div class="stars">★★★★★</div>
+                            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Vivamus venenatis dolor vel lacus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Kanan -->
+                <div class="testimonial-wrapper side-card">
+                    <div class="testimonial-card">
+                        <img src="Rectangle 9 (1).png" alt="Nelly" class="avatar">
+                        <div class="testi-info">
+                            <h4>Kelly</h4>
+                            <span>Architect</span>
+                            <div class="stars">★★★★★</div>
+                            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> Vivamus venenatis dolor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 5. NEWSLETTER / CTA SECTION (LANJUTAN) -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>
+                Shop Now and Transform <br>
+                Your Living Space
+            </h2>
+            <p>Discoun for the first pusrchase at Meubles 10% unconditional</p>
+
+            <form class="newsletter-form">
+                <input type="email" placeholder="Please enter your email address..." required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER SECTION (LANJUTAN) -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>Meubles</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.Vivamus venenatis dolor <br> vel lacus laoreet tristique.
+                    
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">About Us</a>
+                <a href="#">Best Sellers</a>
+                <a href="#">Our Product</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Category</h4>
+                <a href="#">Chair</a>
+                <a href="#">Lamp</a>
+                <a href="#">Sofa</a>
+                <a href="#">Cupboard</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Dribbble</a>
+                <a href="#">Behance</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

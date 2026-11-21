@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #f5f2ed;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* JUDUL MENGGUNAKAN FONT SERIF SEPERTI GAMBAR */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    width: 100%;
+    min-height: 600px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(255, 255, 255, 0.45)),
+        url("Hero.png");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 8%;
+}               /* ==== Background halaman Utama ==== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}               /* ==== Mengatur Elemen di Navbar ====*/
+
+.navbar h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button {
+    background: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e69500;
+}
+
+.hero-content {
+    margin-top: 90px;
+    color: white;
+}
+
+.hero-content h1 {
+    color: #ffa500;
+    font-size: 75px;
+    line-height: 1.1;
+}
+
+.hero-content h3 {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: Bodoni Moda;
+}
+
+.hero-content p {
+    margin: 20px 0 30px;
+    font-size: 13px;
+    color: #e0e0e0;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.learn {
+    background: transparent;
+    border: 1px solid #ffa500;
+    color: #ffa500;
+}
+
+.learn:hover {
+    background: #ffa500;
+    color: white;
+}
+
+/* ================= MAIN BODY ================= */
+.body {
+    width: 100%;
+    background-color: #f5f2ed;
+    padding: 70px 8%;
+}
+
+.section-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    color: #ffa500;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.slider-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.slider-nav button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 13px;
+}
+.slider-nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}                     /*==== Merenggangkan Tombol Navigasi ====*/
+
+
+.slider-nav .prev {
+    background-color: white;
+    color: #ffa500;
+}
+
+.slider-nav .next {
+    background-color: #ffa500;
+    color: white;
+}
+
+/* ================= BEST SELLERS ================= */
+.furniture-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+.furniture-card {
+    background-color: #ffedcf;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+}
+
+.furniture-image {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.furniture-image img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.furniture-info {
+    background-color: #ffa500;
+    border-radius: 15px;
+    padding: 12px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+   
+}
+
+.furniture-info h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+     font-family: 'Playfair Display';
+}
+
+.furniture-info p {
+    color: white;
+    font-size: 28px;
+    font-family: 'Poppins';
+}
+
+.cart-button {
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    color: #ffa500;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* ================= ABOUT FURNITURE ================= */
+.about-furniture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6%;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.about-text {
+    width: 43%;
+}
+
+.about-text h2 {
+    color: #ffa500;
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 18px;
+}
+
+.stat-box {
+    width: 100px;
+    height: 95px;
+    background-color: #ffa500;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    font-family: Playfair Display;
+}
+
+.about-image {
+    width: 51%;
+    height: 486px;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.about-image button {
+    position: absolute;
+    bottom: 32px;
+    left: 35px;
+    padding: 10px 24px;
+    font-size: 12px;
+}
+
+/* ================= COLLECTION SECTION ================= */
+.collection-section {
+    margin-top: 90px;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.collection-card {
+    position: relative;
+    height: 270px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #e6e2dc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.collection-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+.collection-label {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    background-color: #ffa500;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Playfair Display';
+}
+
+.center-btn {
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* ================= TESTIMONIAL SECTION ================= */
+.testimonial-section {
+    margin-top: 90px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.testimonial-wrapper {
+    background-color: #ffedcf;
+    padding: 15px;
+    border-radius: 20px;
+    min-width: 440px;
+}
+
+.testimonial-wrapper.side-card {
+    opacity: 0.9;
+    min-width: 360px;
+}
+
+.testimonial-card {
+    background-color: #ffa500;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.testi-info h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.testi-info span {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.stars {
+    color: #fff3b0;
+    font-size: 14px;
+    margin: 4px 0 8px;
+}
+
+.testi-info p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* ================= NEWSLETTER / CTA SECTION ================= */
+.newsletter-section {
+    background-color: #333333;
+    padding: 70px 8%;
+    color: white;
+}
+
+.newsletter-content {
+    max-width: 700px;
+}
+
+.newsletter-content h2 {
+    color: #ffa500;
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 12px;
+}
+
+.newsletter-content p {
+    font-size: 13px;
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 15px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 14px 25px;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.newsletter-form button {
+    padding: 14px 35px;
+}
+
+/* ================= FOOTER SECTION ================= */
+.footer {
+    background-color: #ffa500;
+    color: white;
+    padding: 60px 8%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-brand h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 12px;
+    line-height: 1.7;
+    max-width: 280px;
+    opacity: 0.95;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: Playfair Display;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
